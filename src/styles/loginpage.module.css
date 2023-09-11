@@ -34,7 +34,7 @@
 .logo{
     color: rgb(174, 210, 255);
     font-size: 45px;
-    /* font-family: 'Roboto Mono Medium'; */
+    bottom: 100px;
 }
 
 
@@ -43,6 +43,9 @@
     border-bottom: 2px solid rgb(39, 0, 93);
     outline: none;
     background-color: rgb(228, 241, 255);
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
 }
 
 .loginbtn{
@@ -53,4 +56,23 @@
     cursor: pointer;
     font-family: 'Roboto Mono Medium';
     border: 2px solid rgb(39, 0, 93);
+    position: relative;
+    left: 70px;
+    top: 60px;
+    font-size: 15px;
+    color: rgb(39, 0, 93);
+}
+
+.inputnames{
+    font-size: 20px;
+}
+
+.username{
+    position: relative;
+    bottom: 50px;
+    color: rgb(39, 0, 93);
+}
+
+.password{
+    color: rgb(39, 0, 93);
 }

@@ -1,6 +1,56 @@
+@font-face {
+    font-family: 'Roboto Mono Medium';
+    src: url('../RobotoMono-Medium.ttf') format('truetype');
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 .background{
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(39, 0, 93);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.loginbox{
+    background-color: rgb(228, 241, 255);
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto Mono Medium';
+}
+
+.logo{
+    color: rgb(174, 210, 255);
+    font-size: 45px;
+    /* font-family: 'Roboto Mono Medium'; */
+}
+
+
+.inputboxs{
+    border: none;
+    border-bottom: 2px solid rgb(39, 0, 93);
+    outline: none;
+    background-color: rgb(228, 241, 255);
+}
+
+.loginbtn{
+    background-color: rgb(174, 210, 255);
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto Mono Medium';
+    border: 2px solid rgb(39, 0, 93);
+}

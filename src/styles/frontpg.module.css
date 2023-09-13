@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.testv{
+    width: 100%;
+    object-fit: cover;
+    /* height: 95vh; */
+}
+
+.navbar{
+    height: 100px;
+}
+
+
+.bodydiv{
+    height: 200vh;
+    background-color: rgb(39, 0, 93);
+}
+
+

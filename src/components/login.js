@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import loginsty from '../styles/loginpage.module.css';
 import { useState } from "react";
+import DarkMode from "../DarkMode/DarkMode";
 
 function Loginpage()
 {
-
-
 
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
@@ -28,6 +27,7 @@ function Loginpage()
 
     return(
         <div className={loginsty.background}>
+            <DarkMode/>
             <h1 className={loginsty.logo} >TOOL BOX</h1>
             {/* <Link to='/frontpage'>mainpage</Link>  */}
             <div className={loginsty.loginbox}>
@@ -40,7 +40,6 @@ function Loginpage()
                     <label className={loginsty.inputnames}>password:</label><br/>
                     <input type="password" className={loginsty.inputboxs} name="p" onChange={(e) => setpassword(e.target.value)}/><br/>
                     </div>
-
                     {login? (<Link to='/frontpage'><input type="submit" value={"Login"} className={loginsty.loginbtn}/></Link>): (<input type="submit" value={"Login"} className={loginsty.loginbtn}/>)}
                 </form>
             </div>  

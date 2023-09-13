@@ -3,6 +3,14 @@
     src: url('../RobotoMono-Medium.ttf') format('truetype');
   }
 
+  .for-light-them{
+    --backgroundcolour: rgb(39, 0, 93);
+  }
+
+  .for-dark-them{
+    --backgroundcolour: rgb(0, 0, 0);
+  }
+
   *{
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +18,7 @@
   }
 
 .background{
-    background-color: rgb(39, 0, 93);
+    background-color: var(--backgroundcolour);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -75,4 +83,11 @@
 
 .password{
     color: rgb(39, 0, 93);
+}
+
+
+.togglebtn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
 }

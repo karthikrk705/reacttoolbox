@@ -27,7 +27,7 @@ function Loginpage()
 
     return(
         <div className={loginsty.background}>
-            <DarkMode/>
+            <div className={loginsty.togglebtn}><DarkMode/></div>
             <h1 className={loginsty.logo} >TOOL BOX</h1>
             {/* <Link to='/frontpage'>mainpage</Link>  */}
             <div className={loginsty.loginbox}>

@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useState, useReducer } from "react";
 import { ReactComponent as Sun } from "./Sun.svg";
 import { ReactComponent as Moon } from "./Moon.svg";
 import "./DarkMode.css";
+import context from "../storage";
+import { type } from "@testing-library/user-event/dist/type";
 
-const DarkMode = () => {
+function reducer(state, action)
+{
+    switch (action.type) {
+        case 'LIGHT':{
+            return{...state, theme:'light'}
+        }
+        case 'DARK':{
+            return{...state, theme:'dark'}
+        }
+        default:
+            break;
+    }
+}
+
+function DarkMode() {
+
+
+    const [datatheme, settheme] = useReducer(reducer,{theme:'light'})
+
+    
+
     return (
-        <div className='dark_mode'>
+        <context.Provider value={{datatheme,settheme}}>
+                    <div className='dark_mode'>
+            
             <input
                 className='dark_mode_input'
                 type='checkbox'
@@ -16,6 +40,7 @@ const DarkMode = () => {
                 <Moon />
             </label>
         </div>
+        </context.Provider>    
     );
 };
 

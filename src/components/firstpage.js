@@ -4,11 +4,9 @@ import testvideo from '../assets/Avatar_ The Way of Water _ Official IMAX® Trai
 import frontsty from '../styles/frontpg.module.css'
 import loginsty from '../styles/loginpage.module.css';
 import DarkMode from "../DarkMode/DarkMode";
-import context from "../storage";
 import { type } from "@testing-library/user-event/dist/type";
 
-const [state, setter] = useContext(context)
-console.log(state.theme)
+
 
 
 function Frontpage()

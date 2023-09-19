@@ -14,7 +14,7 @@ function Loginpage()
     function validate(event)
     {
     event.preventDefault();
-    if(username === "testuser" && password === "12345678") 
+    if(username === "testuser" && password === "WIN@12345") 
     {
         setlogin(true)
     }

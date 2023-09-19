@@ -28,7 +28,7 @@ function Loginpage()
     return(
         <div className={loginsty.background}>
             <div className={loginsty.togglebtn}><DarkMode/></div>
-            <h1 className={loginsty.logo} >TOOL BOX</h1>
+            <h1 className={loginsty.logo} >REACT PAGES</h1>
             {/* <Link to='/frontpage'>mainpage</Link>  */}
             <div className={loginsty.loginbox}>
                 <form onSubmit={validate}>

@@ -6,18 +6,97 @@
 
 .testv{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     /* height: 95vh; */
 }
 
 .navbar{
-    height: 100px;
+    height: 80px;
 }
 
 
 .bodydiv{
-    height: 200vh;
     background-color: rgb(39, 0, 93);
 }
 
+.logofp{
+    color: rgb(174, 210, 255);
+    font-size: 45px;
+    margin-left: 20px;
+    position: relative;
+    top: 6px;
+}
 
+
+.container {  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.9fr) 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "abou1 pic1"
+      "pic2 about2"
+      "form form";
+  }
+  
+  .abou1 { 
+    height: 540px;
+    background-color: rgb(39, 0, 93);
+    grid-area: abou1; }
+  
+  .pic1 { 
+    width: 100%;
+    grid-area: pic1;
+    background-image: url('https://e0.pxfuel.com/wallpapers/560/14/desktop-wallpaper-movie-collage-80s-movie-collage.jpg');
+    background-size: cover; 
+ }
+  
+  .about2 { grid-area: about2;
+    height: 540px;
+    background-color: rgb(39, 0, 93);
+ }
+  
+  .pic2 { 
+        width: 100%;
+        grid-area: pic2; 
+        background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/12/26/205901/e0389e2031c3b353637bb0c3c5739117.jpg');
+        background-size: cover; 
+    }
+  
+  .form { grid-area: form; 
+    border: 5px solid rgb(228, 241, 255);
+    background-color: rgb(174, 210, 255);
+}
+
+
+  @media screen and (max-width: 1200px)
+  {
+    .container {  
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 0.9fr) 1.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "abou1"
+          "pic1"
+          "about2"
+          "pic2"
+          "form";   
+      }
+      
+      .abou1 { 
+        background-color: rgb(39, 0, 93);
+        grid-area: abou1; }
+      
+      .pic1 { grid-area: pic1; }
+      
+      .about2 { grid-area: about2; }
+      
+      .pic2 { grid-area: pic2; }
+      
+      .form { grid-area: form; }
+  }
+  

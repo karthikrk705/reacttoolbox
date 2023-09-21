@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import loginsty from '../styles/loginpage.module.css';
 import { useState } from "react";
 import DarkMode from "../DarkMode/DarkMode";
+import { useDispatch, useSelector } from "react-redux";
 
 function Loginpage()
 {
 
+    const isdark = useSelector(state => state.toggle.isDark)
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
 
@@ -26,7 +28,7 @@ function Loginpage()
 
 
     return(
-        <div className={loginsty.background}>
+        <div className={isdark?loginsty.background2:loginsty.background1}>
             <div className={loginsty.togglebtn}><DarkMode/></div>
             <h1 className={loginsty.logo} >REACT PAGES</h1>
             {/* <Link to='/frontpage'>mainpage</Link>  */}
